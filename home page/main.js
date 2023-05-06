@@ -1362,31 +1362,84 @@ map.loadImage(
     pricee.style.transition = "width 0.5s";
     roomss.style.transition = "width 0.5s";
     
-    function responsive(x) {
-      if (x.matches) { // If media query matches
-        document.getElementById("div").style.width="570px";//570
-        document.getElementById("div").style.height="570px";//500//570
-        addresss.style.width="482px";
-        pricee.style.width="176px";
-        roomss.style.width="176px";
-        ApartmentImagess.style.height='50%';
+    //function responsive(x) {
+     // if (x.matches) { // If media query matches
+       // document.getElementById("div").style.width="570px";//570
+       // document.getElementById("div").style.height="570px";//500//570
+        //addresss.style.width="482px";
+       // pricee.style.width="176px";
+       // roomss.style.width="176px";
+       // ApartmentImagess.style.height='50%';
         
-        } else {
-        document.getElementById("div").style.width="270px";//570
-        document.getElementById("div").style.height="420px";//500//570
-        addresss.style.width="182px";
-        pricee.style.width="56px";
-        roomss.style.width="56px";
-        ApartmentImagess.style.height='35%';
-        if (L=='ar') {
+       // } else {
+       // document.getElementById("div").style.width="270px";//570
+       // document.getElementById("div").style.height="420px";//500//570
+     //   addresss.style.width="182px";
+//        pricee.style.width="56px";
+  //      roomss.style.width="56px";
+    //    ApartmentImagess.style.height='35%';
+      //  if (L=='ar') {
           document.getElementsByClassName("XBTN")[0].style.right = '86%'
+        //}
+//      }
+  //  }
+
+//    var x = window.matchMedia("(min-width: 600px)")
+  //  responsive(x) 
+    // x.addListener(responsive)
+    function responsive(x) {
+        if (x.matches) { // If media query matches
+          document.getElementById("div").style.width="570px";//570
+          document.getElementById("div").style.height="85vh";//500//570/640
+          addresss.style.width="482px";
+          pricee.style.width="176px";
+          roomss.style.width="176px";
+          ApartmentImagess.style.height='50%';
+          
+          } else {
+          
+      function responsiv(y) {
+        
+        if (y.matches) { // If media query matches
+          console.log(y.matches)
+          document.getElementById("div").style.width="568px";//570
+          document.getElementById("div").style.height="78vh";//500//570
+          addresss.style.width="482px";
+          pricee.style.width="176px";
+          roomss.style.width="176px";
+          ApartmentImagess.style.height='100%';
+          
+          } else {
+            console.log(y.matches)
+          document.getElementById("div").style.width="270px";//570
+          document.getElementById("div").style.height="86vh";//500//570
+          addresss.style.width="182px";
+          pricee.style.width="56px";
+          roomss.style.width="56px";
+          ApartmentImagess.style.height='34%';
+          if (L=='ar') {
+            document.getElementsByClassName("XBTN")[0].style.right = '86%'
+          }
+        }
+     
+      }
+
+      var y = window.matchMedia("(max-width: 800px) and (orientation : landscape)")
+      responsiv(y) 
+      y.addListener(function () {
+
+        if(document.getElementById("ApartmentTitlePar").getAttribute("class")=="m-fadeIn"){
+        responsiv(y)
+      }
+      })
         }
       }
-    }
 
-    var x = window.matchMedia("(min-width: 600px)")
-    responsive(x) 
-    // x.addListener(responsive)
+      var x = window.matchMedia("(min-height: 700px")
+      responsive(x) 
+
+
+
     //document.getElementById("div").style.top = screen.height + "px";
     //addresss.display="block";
     var cDiv = d.children;
@@ -1676,31 +1729,84 @@ map.loadImage(
     pricee.style.transition = "width 0.5s";
     roomss.style.transition = "width 0.5s";
     
-    function responsive(x) {
-      if (x.matches) { // If media query matches
-        document.getElementById("div").style.width="570px";//570
-        document.getElementById("div").style.height="570px";//500//570
-        addresss.style.width="482px";
-        pricee.style.width="176px";
-        roomss.style.width="176px";
-        ApartmentImagess.style.height='50%';
+//    function responsive(x) {
+  //    if (x.matches) { // If media query matches
+    //    document.getElementById("div").style.width="570px";//570
+       // document.getElementById("div").style.height="570px";//500//570
+      //  addresss.style.width="482px";
+//        pricee.style.width="176px";
+  //      roomss.style.width="176px";
+ //       ApartmentImagess.style.height='50%';
         
-        } else {
-        document.getElementById("div").style.width="270px";//570
-        document.getElementById("div").style.height="420px";//500//570
-        addresss.style.width="182px";
-        pricee.style.width="56px";
-        roomss.style.width="56px";
-        ApartmentImagess.style.height='35%';
-        if (L=='ar') {
-          document.getElementsByClassName("XBTN")[0].style.right = '86%'
+   //     } else {
+     //   document.getElementById("div").style.width="270px";//570
+       // document.getElementById("div").style.height="420px";//500//570
+  //      addresss.style.width="182px";
+    //    pricee.style.width="56px";
+      //  roomss.style.width="56px";
+        //ApartmentImagess.style.height='35%';
+     //   if (L=='ar') {
+       //   document.getElementsByClassName("XBTN")[0].style.right = '86%'
+//        }
+  //    }
+ //   }
+
+//    var x = window.matchMedia("(min-width: 600px)")
+  //  responsive(x) 
+    // x.addListener(responsive)
+    function responsive(x) {
+        if (x.matches) { // If media query matches
+          document.getElementById("div").style.width="570px";//570
+          document.getElementById("div").style.height="85vh";//500//570/640
+          addresss.style.width="482px";
+          pricee.style.width="176px";
+          roomss.style.width="176px";
+          ApartmentImagess.style.height='50%';
+          
+          } else {
+          
+      function responsiv(y) {
+        
+        if (y.matches) { // If media query matches
+          console.log(y.matches)
+          document.getElementById("div").style.width="568px";//570
+          document.getElementById("div").style.height="78vh";//500//570
+          addresss.style.width="482px";
+          pricee.style.width="176px";
+          roomss.style.width="176px";
+          ApartmentImagess.style.height='100%';
+          
+          } else {
+            console.log(y.matches)
+          document.getElementById("div").style.width="270px";//570
+          document.getElementById("div").style.height="86vh";//500//570
+          addresss.style.width="182px";
+          pricee.style.width="56px";
+          roomss.style.width="56px";
+          ApartmentImagess.style.height='34%';
+          if (L=='ar') {
+            document.getElementsByClassName("XBTN")[0].style.right = '86%'
+          }
+        }
+     
+      }
+
+      var y = window.matchMedia("(max-width: 800px) and (orientation : landscape)")
+      responsiv(y) 
+      y.addListener(function () {
+
+        if(document.getElementById("ApartmentTitlePar").getAttribute("class")=="m-fadeIn"){
+        responsiv(y)
+      }
+      })
         }
       }
-    }
 
-    var x = window.matchMedia("(min-width: 600px)")
-    responsive(x) 
-    // x.addListener(responsive)
+      var x = window.matchMedia("(min-height: 700px")
+      responsive(x) 
+
+
+
     //document.getElementById("div").style.top = screen.height + "px";
     //addresss.display="block";
     var cDiv = d.children;
